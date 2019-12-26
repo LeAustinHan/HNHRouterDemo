@@ -1,0 +1,26 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+
+
+platform :ios, '10.0'
+
+source 'https://cdn.cocoapods.org/'
+source 'git@github.com:LeAustinHan/LBOCTestSDK.git'
+
+
+target 'HNHRouterDemo_Example' do
+  pod 'HNHRouterDemo', :path => '../'
+
+  target 'HNHRouterDemo_Tests' do
+    inherit! :search_paths
+    
+    pod 'MBProgressHUD'
+    pod 'SDWebImage'
+    pod 'AFNetworking'
+    pod 'YYKit'
+    pod 'CTMediator'
+    
+  end
+end
